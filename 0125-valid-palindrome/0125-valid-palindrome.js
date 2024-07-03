@@ -8,6 +8,10 @@ var isPalindrome = function(s) {
     let left = 0;
     let right = s.length - 1;
 
+    if (s.length === 0) {
+        return true;
+    }
+
     while (left < right) {
         if (s[left] === s[right]) {
             left ++;
