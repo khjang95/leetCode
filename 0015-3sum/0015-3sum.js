@@ -3,34 +3,33 @@
  * @return {number[][]}
  */
 var threeSum = function(nums) {
-    let result = [];
+    let results = [];
+    if (nums.length < 3) return results;
+
     nums.sort((a, b) => a - b);
 
-    for (let i = 0; i < nums.length; i ++) {
-        if (i > 0 && nums[i] === nums[i-1]) {
-            continue;
-        }
-        
-        let j = i + 1;
-        let k = nums.length - 1;
+    for (let i = 0; i < nums.length - 2; i++) {
+        if (i > 0 && nums[i] === nums[i - 1]) continue; // 중복된 값 건너뛰기
 
-        while (j < k) {
-            let total = nums[i] + nums[j] + nums[k];
+        let left = i + 1;
+        let right = nums.length - 1;
 
-            if (total > 0) {
-                k--;
-            } else if (total < 0) {
-                j++;
+        while (left < right) {
+            const sum = nums[i] + nums[left] + nums[right];
+
+            if (sum === 0) {
+                results.push([nums[i], nums[left], nums[right]]);
+                while (nums[left] === nums[left + 1]) left++; // 중복된 값 건너뛰기
+                while (nums[right] === nums[right - 1]) right--; // 중복된 값 건너뛰기
+                left++;
+                right--;
+            } else if (sum < 0) {
+                left++;
             } else {
-                result.push([nums[i], nums[j], nums[k]]);
-                j++;
-
-                while (nums[j] === nums[j-1] && j < k) {
-                    j++;
-                }
+                right--;
             }
         }
     }
 
-    return result;
+    return results;
 };
