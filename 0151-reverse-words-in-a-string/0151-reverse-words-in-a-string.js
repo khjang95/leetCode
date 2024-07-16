@@ -11,11 +11,8 @@ var reverseWords = function(s) {
             continue;
         }
 
-        console.log(splitString[i])
-
         result += ' ' + splitString[i];
     }
-    
     
     return result.trim();
 };
