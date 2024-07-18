@@ -18,13 +18,12 @@ var maxProfit = function (prices) {
 
             if (prices[i] > prices[i + 1]) {
                 result += prices[i] - prices[buy];
-                
+
                 sell = i - buy;
                 buy += sell;
             } else if (i === pricesLength - 1) {
                 return result + prices[i] - prices[buy];
             }
-
         }
     }
 
