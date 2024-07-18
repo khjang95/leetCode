@@ -13,8 +13,7 @@ var maxProfit = function (prices) {
         for (let i = greedy + 1; i < pricesLength; i++) {
             if (prices[greedy] > prices[i]) {
                 greedy++;
-
-                continue;
+                break;
             }
 
             if (prices[i] > prices[i + 1]) {
