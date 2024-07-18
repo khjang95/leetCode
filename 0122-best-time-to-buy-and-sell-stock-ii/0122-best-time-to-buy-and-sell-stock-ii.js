@@ -11,16 +11,19 @@ var maxProfit = function (prices) {
     while (greedy < pricesLength - 1) {
 
         for (let i = greedy + 1; i < pricesLength; i++) {
-            if (prices[greedy] < prices[i]) {
-                if (prices[i] > prices[i + 1]) {
-                    result += prices[i] - prices[greedy];
-                    greedy += i - greedy;
-                } else if (i === pricesLength - 1) {
-                    return result + prices[i] - prices[greedy];
-                }
-            } else {
-                greedy ++;
+            if (prices[greedy] > prices[i]) {
+                greedy++;
+
+                continue;
             }
+
+            if (prices[i] > prices[i + 1]) {
+                result += prices[i] - prices[greedy];
+                greedy += i - greedy;
+            } else if (i === pricesLength - 1) {
+                return result + prices[i] - prices[greedy];
+            }
+
         }
     }
 
