@@ -17,10 +17,6 @@ var jump = function (nums) {
         if (i === previousMaxJump) {
             previousMaxJump = maxJump;
             jump++;
-
-            if (maxJump >= nums.length - 1) {
-                break;
-            }
         }
     }
 
