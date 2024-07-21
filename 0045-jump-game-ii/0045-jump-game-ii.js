@@ -3,9 +3,6 @@
  * @return {number}
  */
 var jump = function (nums) {
-    if (nums.length < 2) {
-        return 0;
-    }
 
     let previousMaxJump = 0;
     let maxJump = 0;
