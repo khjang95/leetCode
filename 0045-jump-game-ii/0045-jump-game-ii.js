@@ -3,20 +3,26 @@
  * @return {number}
  */
 var jump = function(nums) {
-    let len = nums.length - 1; 
-    let curr = -1; 
-    let next = 0
-    
-    let result = 0;
-
-    for (let i = 0; next < len; i++) {
-        if (i > curr) {
-            result++
-            curr = next;
-        }
-
-        next = Math.max(next, nums[i] + i);
+    if (nums.length <= 1) {
+        return 0;
     }
 
-    return result;
+    let jumps = 0;
+    let currentEnd = 0;
+    let maxJump = 0;
+
+    for (let i = 0; i < nums.length - 1; i++) {
+        maxJump = Math.max(maxJump, i + nums[i]);
+
+        if (i == currentEnd) {
+            jumps++;
+            currentEnd = maxJump;
+
+            if (currentEnd >= nums.length - 1) {
+                break;
+            }
+        }
+    }
+
+    return jumps;
 };
