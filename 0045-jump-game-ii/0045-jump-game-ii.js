@@ -7,15 +7,15 @@ var jump = function(nums) {
         return 0;
     }
 
-    let jumps = 0;
+    let jump = 0;
     let currentEnd = 0;
     let maxJump = 0;
 
     for (let i = 0; i < nums.length - 1; i++) {
         maxJump = Math.max(maxJump, i + nums[i]);
 
-        if (i == currentEnd) {
-            jumps++;
+        if (i === currentEnd) {
+            jump++;
             currentEnd = maxJump;
 
             if (currentEnd >= nums.length - 1) {
@@ -24,5 +24,5 @@ var jump = function(nums) {
         }
     }
 
-    return jumps;
+    return jump;
 };
