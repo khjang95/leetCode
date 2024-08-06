@@ -17,12 +17,12 @@ var romanToInt = function (s) {
     let result = 0;
 
     while (index < s.length) {
-        const sum = symbol[s[index + 1]] - symbol[s[index]];
-
         if (index === s.length - 1) {
             return result + symbol[s[index]];
         } 
         
+        const sum = symbol[s[index + 1]] - symbol[s[index]];
+
         if (sum > 0 && sum * 10 % 10 === 0) {
             result += sum;
             index += 2;
