@@ -23,7 +23,7 @@ var romanToInt = function (s) {
         
         const sum = symbol[s[index + 1]] - symbol[s[index]];
 
-        if (sum > 0 && sum * 10 % 10 === 0) {
+        if (sum > 0) {
             result += sum;
             index += 2;
         } else {
