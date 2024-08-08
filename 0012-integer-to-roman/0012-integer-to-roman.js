@@ -15,8 +15,7 @@ var intToRoman = function (num) {
     return result;
 };
 
-var transRoman = function (number, digit) {
-    var roman = {
+var roman = {
         1: 'I',
         5: 'V',
         10: 'X',
@@ -25,6 +24,8 @@ var transRoman = function (number, digit) {
         500: 'D',
         1000: 'M'
     }
+
+var transRoman = function (number, digit) {
     var midNumber = 5;
     var unit = digit === 0 ? 1 : 10 ** digit;
 
