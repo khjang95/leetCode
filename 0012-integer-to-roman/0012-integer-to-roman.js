@@ -3,20 +3,20 @@
  * @return {string}
  */
 var intToRoman = function (num) {
-    const numToString = num.toString();
-    const numLength = numToString.length;
+    var numToString = num.toString();
+    var numLength = numToString.length;
 
-    let result = ''
+    var result = ''
 
-    for (let i = 0; i < numLength; i++) {
+    for (var i = 0; i < numLength; i++) {
         result += transRoman(Number(numToString[i]), numLength - 1 - i);
     }
 
     return result;
 };
 
-const transRoman = (number, digit) => {
-    const roman = {
+var transRoman = function (number, digit) {
+    var roman = {
         '1': 'I',
         '5': 'V',
         '10': 'X',
@@ -25,8 +25,8 @@ const transRoman = (number, digit) => {
         '500': 'D',
         '1000': 'M'
     }
-    const standard = 5;
-    const digits = digit === 0 ? 1 : 10 ** digit;
+    var standard = 5;
+    var digits = digit === 0 ? 1 : 10 ** digit;
 
     if (number < standard) {
         if (number === 4) {
