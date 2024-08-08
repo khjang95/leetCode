@@ -25,20 +25,20 @@ var transRoman = function (number, digit) {
         500: 'D',
         1000: 'M'
     }
-    var standard = 5;
-    var digits = digit === 0 ? 1 : 10 ** digit;
+    var midNumber = 5;
+    var unit = digit === 0 ? 1 : 10 ** digit;
 
-    if (number < standard) {
+    if (number < midNumber) {
         if (number === 4) {
-            return roman[digits] + roman[standard * digits];
+            return roman[unit] + roman[midNumber * unit];
         }
         
-        return roman[digits].repeat(number);
+        return roman[unit].repeat(number);
     } else {
         if (number === 9) {
-            return roman[digits] + roman[digits * 10];
+            return roman[unit] + roman[unit * 10];
         }
 
-        return roman[standard * digits] + roman[digits].repeat(number - standard);
+        return roman[midNumber * unit] + roman[unit].repeat(number - midNumber);
     }
 }
