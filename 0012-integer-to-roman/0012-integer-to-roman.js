@@ -32,16 +32,12 @@ const transRoman = (number, digit) => {
         if (number === 4) {
             return roman[digits] + roman[standard * digits];
         }
-
-console.log(roman[digits].repeat(number))
         
         return roman[digits].repeat(number);
     } else {
         if (number === 9) {
             return roman[digits] + roman[digits * 10];
         }
-
-console.log(roman[standard * digits] + roman[digits].repeat(number - standard))
 
         return roman[standard * digits] + roman[digits].repeat(number - standard);
     }
