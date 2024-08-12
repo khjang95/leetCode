@@ -17,8 +17,6 @@ var majorityElement = function(nums) {
             object[num] = object[num] + 1;
         }
 
-        console.log(num)
-
         if (object[num] > majority) {
             return num;
         }
