@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/khjang95/leetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0134-gas-station](https://github.com/khjang95/leetCode/tree/master/0134-gas-station) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/khjang95/leetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/khjang95/leetCode/tree/master/0189-rotate-array) |
 ## Two Pointers
 |  |
@@ -41,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/khjang95/leetCode/tree/master/0015-3sum) |
+| [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
 ## Binary Search
 |  |
 | ------- |
@@ -68,4 +70,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0012-integer-to-roman](https://github.com/khjang95/leetCode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/khjang95/leetCode/tree/master/0013-roman-to-integer) |
+| [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
