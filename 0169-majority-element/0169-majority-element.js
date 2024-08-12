@@ -8,16 +8,12 @@ var majorityElement = function(nums) {
 
     for (var i = 0; i < nums.length; i++) {
         var num = nums[i];
-        var target = object[num];
-        
-        if (!object[num]) {
-            object[num] = 1;
-        } else {
-            object[num] = object[num] + 1;
-        }
+        var target = object[num] ? object[num] + 1 : 1;
 
-        if (object[num] > majority) {
+        if (target > majority) {
             return num;
         }
+
+        object[num] = target;
     }
 };
