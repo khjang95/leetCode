@@ -6,8 +6,6 @@ var majorityElement = function(nums) {
     var majority = nums.length / 2;
     var object = {};
 
-    nums.sort();
-
     for (var i = 0; i < nums.length; i++) {
         var num = nums[i];
 
