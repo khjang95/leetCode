@@ -3,10 +3,10 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    var numsLength = nums.length;
+    var majority = nums.length / 2;
     var object = {};
 
-    for (var i = 0; i < numsLength; i++) {
+    for (var i = 0; i < nums.length; i++) {
         var num = nums[i];
         
         if (!object[num]) {
@@ -15,7 +15,7 @@ var majorityElement = function(nums) {
             object[num] = object[num] + 1;
         }
 
-        if (object[num] > numsLength / 2) {
+        if (object[num] > majority) {
             return num;
         }
     }
