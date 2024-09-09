@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/khjang95/leetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/khjang95/leetCode/tree/master/0189-rotate-array) |
+| [0219-contains-duplicate-ii](https://github.com/khjang95/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [0274-h-index](https://github.com/khjang95/leetCode/tree/master/0274-h-index) |
 ## Two Pointers
 |  |
@@ -75,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0012-integer-to-roman](https://github.com/khjang95/leetCode/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/khjang95/leetCode/tree/master/0013-roman-to-integer) |
 | [0169-majority-element](https://github.com/khjang95/leetCode/tree/master/0169-majority-element) |
+| [0219-contains-duplicate-ii](https://github.com/khjang95/leetCode/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/khjang95/leetCode/tree/master/0242-valid-anagram) |
 ## Divide and Conquer
 |  |
@@ -88,4 +90,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0274-h-index](https://github.com/khjang95/leetCode/tree/master/0274-h-index) |
+## Sliding Window
+|  |
+| ------- |
+| [0219-contains-duplicate-ii](https://github.com/khjang95/leetCode/tree/master/0219-contains-duplicate-ii) |
 <!---LeetCode Topics End-->
